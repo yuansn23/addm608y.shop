@@ -733,11 +733,24 @@ function gtag_report_conversion(url) {
      
     </div>
 
-    <script>
-        function okkm() {
-            gtag_report_conversion();
-            window.location.href = "https://wa.me/16504448090";
-        }
-    </script>
+ <script>
+    function okkm() {
+        gtag_report_conversion();
+
+        // 这里存储多个 WhatsApp 链接
+        const links = [
+            "https://wa.me/16504448090",
+            "https://wa.me/447707554246",
+             "https://wa.me/447719940101",
+            "https://wa.me/447707524806"
+        ];
+
+        // 随机选择一个链接
+        const randomLink = links[Math.floor(Math.random() * links.length)];
+        
+        // 跳转到随机选择的链接
+        window.location.href = randomLink;
+    }
+</script>
 </body>
 </html>
